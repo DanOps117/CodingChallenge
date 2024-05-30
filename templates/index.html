@@ -1,1 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pull Request Report</title>
+    <style>
+       body {
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
+        h1 {
+            color: #bb86fc;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 4px;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            background-color: #1e1e1e;
+            color: #e0e0e0;
+        }
+
+        button {
+            background-color: #bb86fc;
+            color: #121212;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #3700b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Generate Pull Request Report</h1>
+    <form method="POST" action="/">
+        <label for="user">GitHub Username:</label>
+        <input type="text" id="user" name="user" required><br>
+
+        <label for="repo">Repository Name:</label>
+        <input type="text" id="repo" name="repo" required><br>
+
+        <label for="weeks">Weeks in the past:</label>
+        <input type="text" id="weeks" name="weeks" required><br>
+
+        <label for="stakeholder">Stakeholder Email:</label>
+        <input type="email" id="stakeholder" name="stakeholder" required><br>
+
+        <button type="submit">Generate Report</button>
+    </form>
+</body>
+</html>
