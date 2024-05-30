@@ -12,7 +12,7 @@ To test the code please follow the next steps:
 ```   
    python3 -m venv venv
    source venv/bin/activate
-   pip install -f requirements.txt
+   pip install -r requirements.txt
    python3 ./app.py
 ```
   # TEST WITH DOCKER
